@@ -1,0 +1,11 @@
+<div class="container mt-6">
+    <h3 class="mt-4">Users</h3>
+    <div class="input-group mt-6 pt-3">
+      <input type="number" class="form-control col-md-3" aria-describedby="basic-addon1" [(ngModel)]='inputSearch' (keyup)='getCard($event)'>
+    </div>
+    <hr>
+
+    <app-card></app-card>
+</div>
+
+

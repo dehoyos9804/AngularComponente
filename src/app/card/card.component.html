@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-3" *ngFor='let user of users'>
+        <div *ngFor='let u of user'>
+            <div class="card mt-12" role="button" tabindex="0">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img class="rounded-circle" [src]="u.picture.medium">
+                        <h5>@{{u.login.username}}</h5>
+                    </div>
+                    <small>
+                        <h6>{{ u.name.title }} {{ u.name.first}} {{ u.name.last}}</h6>
+                        <p class="mb-1">{{ u.email }}</p>
+                        <p class="mb-1">{{ u.location.state }} # {{ u.location.postcode }}</p>
+                        <p class="mb-1">{{ u.location.city }}, {{ u.location.state }} - {{ u.location.country }}</p>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
